@@ -1,19 +1,108 @@
 @import url(variables.css);
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--color-primary);
+}
 .container{
     display: grid;
-    gap: 10px;
-    grid-template-columns: 5em 100px 30%;
-    grid-template-rows: 200px auto;
-    padding: 10px;
-    background-color: gray;
-    max-width: 30rem;
-    padding: 1em;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-template-areas: 
+    "nits nits nits gps gps depth carbon carbon"
+    "nits nits nits gps gps depth carbon carbon"
+    "nits nits nits uvi uvi uvi carbon carbon"
+    "range modular uvi uvi uvi carbon carbon"
+    "range modular uvi uvi uvi life meter" 
+    "band band uvi uvi uvi action action"
+    "sip sip siri features precision boost gesture"
+    "sip sip siri features precision boost gesture";
+    grid-gap:8px;
+    width: 95%;
+    height: 90vh;
+    margin: 15px auto;
 }
-.box{
-    background-color: white;
-    border: 1px solid black;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+.container div{
+    background:var(--color-secundary);
+}
+.item1{
+    grid-area: nits;
+    background: red;
+}
+.item2{
+    grid-area: range;
+    background: purple;
+}
+.item3{
+    grid-area: modular;
+    background: blue;
+}
+
+.item4{
+    grid-area: band;
+    background: greenyellow;
+}
+
+.item5{
+    grid-area: sip;
+    background: violet;
+}
+.item6{
+    grid-area: siri;
+    background:teal;
+}
+.item7{
+    grid-area: gps;
+    background: turquoise;
+}
+.item8{
+    grid-area: uvi;
+    background: rgba(185, 8, 205, 0.527);
+}
+
+.item9{
+    grid-area: features;
+    background: rgba(224, 127, 15, 0.761);
+}
+
+.item10{
+    grid-area: depth;
+    background: rgba(216, 27, 220, 0.75);
+}
+.item11{
+    grid-area: carbon;
+    background:  rgba(71, 71, 165, 0.456);
+}
+
+.item12{
+    grid-area: life;
+    background: rgba(0, 47, 255, 0.634);
+}
+
+.item13{
+    grid-area: meter;
+    background: rgba(255, 213, 0, 0.211);
+}
+
+.item14{
+    grid-area: action;
+    background: rgba(128, 41, 0, 0.527);
+}
+
+.item15{
+    grid-area: precision;
+    background: black;
+}
+
+.item16{
+    grid-area: boost;
+    background: rgba(133, 161, 43, 0.324);
+}
+
+.item17{
+    grid-area: gesture;
+    background: whitesmoke;
 }

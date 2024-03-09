@@ -9,90 +9,201 @@ body{
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: repeat(13,1fr);
+    grid-template-rows: repeat(11,1fr);
     grid-template-areas: 
-    "nits nits nits gps gps depth carbon carbon"
-    "nits nits nits gps gps depth carbon carbon"
-    "nits nits nits uvi uvi uvi carbon carbon"
-    "range modular uvi uvi uvi carbon carbon"
-    "range modular uvi uvi uvi life meter" 
-    "band band uvi uvi uvi action action"
+    "nits nits nits nits gps gps gps depth depth carbon carbon carbon carbon"
+    "nits nits nits nits gps gps gps depth depth carbon carbon carbon carbon"
+    "nits nits nits nits uvi uvi uvi uvi uvi carbon carbon carbon carbon"
+    "range range modular modular uvi uvi uvi uvi uvi carbon carbon carbon carbon"
+    "range range modular modular uvi uvi uvi uvi uvi life life meter meter"
+    "range range modular modular uvi uvi uvi uvi uvi life life meter meter"
+    "band band band band uvi uvi uvi uvi uvi action action action action"
+    "band band band band uvi uvi uvi uvi uvi action action action action"
+    "sip sip sip siri features precision precision precision boost gesture gesture gesture gesture"
+    "sip sip sip siri features precision precision precision boost gesture gesture gesture gesture"
+    "sip sip sip siri features precision precision precision boost gesture gesture gesture gesture"
+    /*  
     "sip sip siri features precision boost gesture"
-    "sip sip siri features precision boost gesture";
+    "sip sip siri features precision boost gesture"; */
+    ;
     grid-gap:8px;
     width: 95%;
-    height: 90vh;
+    height: 96vh;
     margin: 15px auto;
 }
 .container div{
-    background:var(--color-secundary);
+    border-radius: 15px;
+    background: var(--color-secundary);
 }
 .item1{
     grid-area: nits;
-    background: red;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item1 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
 }
 .item2{
     grid-area: gps;
-    background: purple;
+    background-color: purple;
+}
+.item2 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
 }
 .item3{
     grid-area: depth;
-    background: blue;
-}
+    background-color: blue;
+} 
+.item3 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
+}  
 .item4{
     grid-area: carbon;
-    background: greenyellow;
+    background-color: greenyellow;
+}
+.item4 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
 }
 .item5{
     grid-area: uvi;
-    background: violet;
+    background-color: violet;
+}
+.item5 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
 }
 .item6{
     grid-area: range;
-    background:teal;
+    background-color:teal;
+}
+.item6 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
 }
 .item7{
     grid-area: modular;
-    background: turquoise;
+    background-color: turquoise;
+}
+.item7 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
 }
 .item8{
     grid-area: life;
-    background: rgba(185, 8, 205, 0.527);
+    background-color: rgba(185, 8, 205, 0.527);
+}
+.item8 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
 }
 .item9{
     grid-area: meter;
-    background: rgba(224, 127, 15, 0.761);
+    background-color: rgba(224, 127, 15, 0.761);
+}
+.item9 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
 }
 .item10{
     grid-area: band;
-    background: rgba(216, 27, 220, 0.75);
+    background-color: rgba(216, 27, 220, 0.75);
+}
+.item10 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
 }
 .item11{
     grid-area: action;
-    background:  rgba(71, 71, 165, 0.456);
+    background-color:  rgba(71, 71, 165, 0.456);
+}
+.item11 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
 }
 .item12{
     grid-area: sip;
-    background: rgba(0, 47, 255, 0.634);
+    background-color: rgba(0, 47, 255, 0.634);
+}
+.item12 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
 }
 .item13{
     grid-area: siri;
-    background: rgba(255, 213, 0, 0.211);
+    background-color: rgba(255, 213, 0, 0.211);
+}
+.item13 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
 }
 .item14{
     grid-area: features;
-    background: rgba(128, 41, 0, 0.527);
+    background-color: rgba(128, 41, 0, 0.527);
+}
+.item14 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
 }
 .item15{
     grid-area: precision;
-    background: black;
+    background-color: black;
+}
+.item15 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
 }
 .item16{
     grid-area: boost;
-    background: rgba(133, 161, 43, 0.324);
+    background-color: rgba(133, 161, 43, 0.324);
+}
+.item16 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
 }
 .item17{
     grid-area: gesture;
-    background: whitesmoke;
+    background-color: whitesmoke;
+} 
+.item17 img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: absolute;
 }

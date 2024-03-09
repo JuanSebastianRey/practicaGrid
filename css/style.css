@@ -33,75 +33,65 @@ body{
     background: red;
 }
 .item2{
-    grid-area: range;
+    grid-area: gps;
     background: purple;
 }
 .item3{
-    grid-area: modular;
+    grid-area: depth;
     background: blue;
 }
-
 .item4{
-    grid-area: band;
+    grid-area: carbon;
     background: greenyellow;
 }
-
 .item5{
-    grid-area: sip;
+    grid-area: uvi;
     background: violet;
 }
 .item6{
-    grid-area: siri;
+    grid-area: range;
     background:teal;
 }
 .item7{
-    grid-area: gps;
+    grid-area: modular;
     background: turquoise;
 }
 .item8{
-    grid-area: uvi;
+    grid-area: life;
     background: rgba(185, 8, 205, 0.527);
 }
-
 .item9{
-    grid-area: features;
+    grid-area: meter;
     background: rgba(224, 127, 15, 0.761);
 }
-
 .item10{
-    grid-area: depth;
+    grid-area: band;
     background: rgba(216, 27, 220, 0.75);
 }
 .item11{
-    grid-area: carbon;
+    grid-area: action;
     background:  rgba(71, 71, 165, 0.456);
 }
-
 .item12{
-    grid-area: life;
+    grid-area: sip;
     background: rgba(0, 47, 255, 0.634);
 }
-
 .item13{
-    grid-area: meter;
+    grid-area: siri;
     background: rgba(255, 213, 0, 0.211);
 }
-
 .item14{
-    grid-area: action;
+    grid-area: features;
     background: rgba(128, 41, 0, 0.527);
 }
-
 .item15{
     grid-area: precision;
     background: black;
 }
-
 .item16{
     grid-area: boost;
     background: rgba(133, 161, 43, 0.324);
 }
-
 .item17{
     grid-area: gesture;
     background: whitesmoke;

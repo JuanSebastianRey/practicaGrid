@@ -23,9 +23,6 @@ body{
     "sip sip sip siri features precision precision precision boost gesture gesture gesture gesture"
     "sip sip sip siri features precision precision precision boost gesture gesture gesture gesture"
     "sip sip sip siri features precision precision precision boost gesture gesture gesture gesture"
-    /*  
-    "sip sip siri features precision boost gesture"
-    "sip sip siri features precision boost gesture"; */
     ;
     grid-gap:8px;
     width: 95%;
@@ -45,7 +42,8 @@ body{
     border-radius: 20px;
     width: 100%;
     height: 100%;
-    background-image: absolute;
+    
+    
 }
 .item2{
     grid-area: gps;
@@ -206,4 +204,202 @@ body{
     width: 100%;
     height: 100%;
     background-image: absolute;
+}
+@media (max-width: 800px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(17,1fr);
+        grid-template-areas: 
+        "nits"
+        "gps"
+        "depth"
+        "carbon"
+        "uvi"
+        "range"
+        "modular"
+        "life"
+        "meter"
+        "band"
+        "action"
+        "sip"
+        "siri"
+        "features"
+        "precision"
+        "boost"
+        "gesture";
+        height: 500vh;
+    }
+    .item1{
+        grid-area: nits;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item1 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+         
+    }
+    .item2{
+        grid-area: gps;
+        background-color: purple;
+    }
+    .item2 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+         
+    }
+    .item3{
+        grid-area: depth;
+        background-color: blue;
+    } 
+    .item3 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+         
+    }  
+    .item4{
+        grid-area: carbon;
+        background-color: greenyellow;
+    }
+    .item4 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+         
+    }
+    .item5{
+        grid-area: uvi;
+        background-color: violet;
+    }
+    .item5 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+         
+    }
+    .item6{
+        grid-area: range;
+        background-color:teal;
+    }
+    .item6 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+         
+    }
+    .item7{
+        grid-area: modular;
+        background-color: turquoise;
+    }
+    .item7 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+         
+    }
+    .item8{
+        grid-area: life;
+        background-color: rgba(185, 8, 205, 0.527);
+    }
+    .item8 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+         
+    }
+    .item9{
+        grid-area: meter;
+        background-color: rgba(224, 127, 15, 0.761);
+    }
+    .item9 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+         
+    }
+    .item10{
+        grid-area: band;
+        background-color: rgba(216, 27, 220, 0.75);
+    }
+    .item10 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+         
+    }
+    .item11{
+        grid-area: action;
+        background-color:  rgba(71, 71, 165, 0.456);
+    }
+    .item11 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+         
+    }
+    .item12{
+        grid-area: sip;
+        background-color: rgba(0, 47, 255, 0.634);
+    }
+    .item12 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+         
+    }
+    .item13{
+        grid-area: siri;
+        background-color: rgba(255, 213, 0, 0.211);
+    }
+    .item13 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .item14{
+        grid-area: features;
+        background-color: rgba(128, 41, 0, 0.527);
+    }
+    .item14 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+         
+
+    }
+    .item15{
+        grid-area: precision;
+        background-color: black;
+    }
+    .item15 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+         
+    }
+    .item16{
+        grid-area: boost;
+        background-color: rgba(133, 161, 43, 0.324);
+    }
+    .item16 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+         
+    }
+    .item17{
+        grid-area: gesture;
+        background-color: whitesmoke;
+    } 
+    .item17 img{
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+         
+    }
 }
